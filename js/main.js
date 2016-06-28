@@ -43,7 +43,7 @@ recommendations['91'] = ['Bachelor of Science in Computer Science - University o
 $('.dropdown-menu a').on('click', function(){
 
     $('.dropdown-toggle').html($(this).html() + ' <span class="caret"></span>');
-    
+
     $("#user_based tbody tr").remove();
 
     var subcategory_id = $(this).attr('data-value');
@@ -52,7 +52,7 @@ $('.dropdown-menu a').on('click', function(){
     for( course in recommended_courses) {
         $('#user_based tbody').append('<tr><td>' + recommended_courses[course] + '</td></tr>');
     }
-	
+    
     //var user_based_reco = document.getElementById('user_based').rows;
     //console.log(user_based_reco.length);
     //document.getElementById('item_based').deleteRow(0)
