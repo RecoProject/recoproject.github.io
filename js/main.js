@@ -52,7 +52,7 @@ $('.dropdown-menu a').on('click', function(){
     for( course in recommended_courses) {
         $('#user_based tbody').append('<tr><td>' + recommended_courses[course] + '</td></tr>');
     }
-
+	
     //var user_based_reco = document.getElementById('user_based').rows;
     //console.log(user_based_reco.length);
     //document.getElementById('item_based').deleteRow(0)

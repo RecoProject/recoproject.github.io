@@ -38,12 +38,27 @@
         <!-- Add your site or application content here -->
         <h1>Higher Education Courses Recommendation</h1>
 
+		<div class="info">
+            <p> The <b>Higher Education Courses Recommendation</b> is the result of a dissertation project. Its main
+                goal was to assess how to use alumni and job offers information to recommend the most suitable courses
+                to be closer to achieve a specific career. Here, we present a proof-of-concept with <b>Computer Science</b>
+                as the target discipline.
+            </p>
+			<p> Each recommended course comes from information gathered from alumni profiles on social networks
+                with business purposes.
+            </p>
+            <p> You can navigate through different areas of expertise in Computer Science through the drop-down and
+                see the recommended courses accordingly to the area chosen. Apart from higher education courses,
+                in some expertise areas, we also recommend online courses that can be suitable for that particular area.
+            </p>
+        </div>
+		
         <div class="results">
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-3">
-                        <label>Choose an area: </label>
+                        <label>Choose an area of expertise: </label>
                         <div class="dropdown" id="cat_dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Software development <span class="caret"></span>
@@ -110,18 +125,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="info">
-            <p> The <b>Higher Education Courses Recommendation</b> is the result of a dissertation project. Its main
-                goal was to assess how to use alumni and job offers information to recommend the most suitable courses
-                to be closer to achieve a specific career. Here, we present a proof-of-concept with <b>Computer Science</b>
-                as the target discipline.
-            </p>
-            <p> You can navigate through different areas of expertise in Computer Science through the drop-down and
-                see the recommended courses accordingly to the area chosen. Apart from higher education courses,
-                in some expertise areas, we also recommend online courses that can be suitable for that particular area.
-            </p>
         </div>
 
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
