@@ -50,9 +50,10 @@ $('.dropdown-menu a').on('click', function(){
     var recommended_courses = recommendations[subcategory_id]
     var course;
     for( course in recommended_courses) {
-        $('#user_based tbody').append('<tr><td>' + recommended_courses[course] + '</td></tr>');
+        pos = parseInt(course) + 1
+        $('#user_based tbody').append('<tr><td><b>' + pos + '.</b></td><td>'+ recommended_courses[course] + '</td></tr>');
     }
-    
+
     //var user_based_reco = document.getElementById('user_based').rows;
     //console.log(user_based_reco.length);
     //document.getElementById('item_based').deleteRow(0)
